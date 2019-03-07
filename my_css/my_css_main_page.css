@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.justify-content_flex-end {				
+    display: flex;
+      align-items: center;
+      justify-content: flex-end;
+}
+.display_flex{
+    display: flex;
+    align-items:center;
+}
+.margin{
+    margin:17px 0 0 5px;
+}
+
+
+table {
+    width: 100%; /* растягиваем таблицу на всю ширину контента */
+    border-collapse: collapse; /* схлопываем границы ячеек */
+    table-layout: fixed;
+}
+table td {
+    padding: 0 10px; /* для красоты добавляем отступы в ячейках */  
+}
+table img {
+    width: 100%; /* растягиваем изображение на всю ширину ячейки */
+}
+.text-muted{
+    margin:0;
+}
+
+
+
+
+
+
+/* ///////////////////////////////////////////////////////// */
+/* Style for test */
+.block_left{
+background:rgb(168, 110, 110);
+}
+.block_right{
+background:greenyellow;
+}
+.film_1{
+background:rgb(110, 159, 168)
+}
+.film_2{
+background:rgb(210, 212, 49)
+}
+.film_3{
+background:rgb(134, 49, 116)
+}
+.film_4{
+background:rgb(47, 255, 82);
+}
+/* ///////////////////////////////////////////////////////// */
+
+
+
+.height{
+    min-height:560px;
+    /* display:flex; */
+}
