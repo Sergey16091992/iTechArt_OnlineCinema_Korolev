@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+
+
+
 .justify-content_flex-end {				
     display: flex;
       align-items: center;
@@ -36,31 +39,45 @@ table img {
 
 
 
+
 /* ///////////////////////////////////////////////////////// */
 /* Style for test */
 .block_left{
-background:rgb(168, 110, 110);
+    background:rgb(168, 110, 110);
 }
 .block_right{
-background:greenyellow;
+    background:rgb(71, 90, 43);
 }
 .film_1{
-background:rgb(110, 159, 168)
+    background:rgb(110, 159, 168)
 }
 .film_2{
-background:rgb(210, 212, 49)
+    background:rgb(210, 212, 49)
 }
 .film_3{
-background:rgb(134, 49, 116)
+    background:rgb(134, 49, 116)
 }
 .film_4{
-background:rgb(47, 255, 82);
+    background:rgb(47, 255, 82);
+}
+.film_5{
+    background:rgb(50, 65, 68)
+}
+.film_6{
+    background:rgb(30, 51, 44)
+}
+.film_7{
+    background:rgb(216, 32, 176)
+}
+.film_8{
+    background:rgb(54, 7, 107);
 }
 /* ///////////////////////////////////////////////////////// */
 
 
 
-.height{
+.height > div{
+    max-height:600px;
     min-height:560px;
-    /* display:flex; */
+    /* display: flex;     */
 }

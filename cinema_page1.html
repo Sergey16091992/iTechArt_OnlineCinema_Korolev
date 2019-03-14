@@ -9,10 +9,54 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">	 
 	<link rel="stylesheet" href="style.css" type="text/css"/>
 	<link href="css/bootstrap.css" rel=stylesheet>
-	<link rel="stylesheet" href="my_css/my_css_main_page.css" type="text/css"/>
-	<!-- <link rel="stylesheet" href="style.css"> --> 
-	
+	<link rel="stylesheet" href="my_css/my_css_main_page.css" type="text/css" charset="utf-8">	
+	<!-- <link rel="stylesheet" href="css/adsite.css" type="text/css" charset="utf-8"> -->
+<style>
+.container-fluid>.height{
+    max-height:1000px;
+    min-height:560px; 
+}
 
+
+.size_picture>img{
+    border:2px solid #4d4949;
+    border-radius:5px;
+	width:100%;
+	height:350px;	
+}
+
+
+.block_left{
+    background:white;
+}
+.block_right{
+	background:white;
+}
+.film_1{
+    background:white;
+}
+.film_2{
+    background:white;
+}
+.film_3{
+    background:white;
+}
+.film_4{
+    background:white;
+}
+.film_5{
+    background:white;
+}
+.film_6{
+    background:white;
+}
+.film_7{
+    background:white;
+}
+.film_8{
+    background:white;
+}
+</style>
 </head>
 <body>  
 	<!-- Header -->
@@ -32,114 +76,26 @@
 							<form class="navbar-form navbar-right" role="search">
 									<div class="form-group">
 									  <input type="text" class="form-control" placeholder="Search">
-									</div>
+									</div>					
 
-
-
-									<!-- <button type="submit" class="btn btn-danger">Registration</button> -->
-
-									<!-- <button class="btn btn-info" data-toggle="modal" data-target="#myModal">Вспывающее окно</button>
-									<div id="myModal" class="modal fade" tabindex="-1">
-										  <div class="modal-dialog modal-sm">
-											<div class="modal-content">
-												 <div class="modal-header">
-													<button class="close" data-dismiss="modal">х</button>
-													<h4 class="modal-title">Registration</h4>
-												</div>
-											</div>
-										</div>
-									</div> -->
-
-
-									<button class="btn btn-danger" data-toggle="modal" data-target="#reg">Registration</button>
-									<div id="reg" class="modal fade" tabindex="-1">
-									  <div class="modal-dialog modal-sm">
-										<div class="modal-content">
-										  <div class="modal-header">
-											<button class="close" data-dismiss="modal">х</button>
-											<h4 class="modal-title">Registration</h4>
-										  </div>
-								<form>
-									<div class="container">
-										<div class="form-group">
-											<label for="firstname">First Name</label><br>
-											<input type="text" class="form-control" id="firstname" placeholder="Enter your first name"><br><br>
-
-											<lable for="lastname">Last Name</lable><br>
-											<input type="text" class="form-control" id="lastname" placeholder="Enter you Last Name"><br><br>
-
-											<lable for="email">Email</lable><br>
-											<input type="email" class="form-control" id="email" placeholder="Enter your Email">
-										</div>
-
-									</div>
-									<br>
-								</form>
-										 
-										  <div class="modal-footer">
-											<button class="btn btn-success" data-dismiss="modal">Sing in</button>
-										  </div>
-										</div>
-									  </div>
-									</div>  
+									<a href="registration.html" class="btn btn-success" role="button">Registration</a>								
+									 
 							</form>
 				</div>
 			</div>
 		</nav>
-<!-- Left block with "All films" and buttom dropdown -->
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-xs-8 col-sm-6 col-md-6 display_flex block_left" style="height: 100px;">							
-					 	<h1>All films</h1>
-							
-						<div class="dropdown margin">
-									<button class="btn btn-default dropdown-toggle" data-toggle="dropdown">When
-										<span class="caret"></span>
-									</button> 
-										<ul class="dropdown-menu"> 											
-											<li><a href="#">All the time</a></li>
-											<li><a href="#">Today</a></li>
-											<li><a href="#">Tomorrow</a></li>
-											<li class="divider"></li>										
-											<li><a href="#">Select day</a></li>
-										</ul>
-						</div>
-				
-
-<!-- Right block with  buttom dropdown-->
-				</div>
-				<div class="col-sx-4 col-sm-6 col-md-6 justify-content_flex-end block_right" style="height: 100px;">					
-						
-						<div class="dropdown margin">
-								<button class="btn btn-default dropdown-toggle" data-toggle="dropdown">All genres
-									<span class="caret"></span>
-								</button> 
-									<ul class="dropdown-menu"> 											
-										<li><a href="#">All genres</a></li>
-										<li><a href="#">Adventure</a></li>
-										<li><a href="#">Fantasy</a></li>																		
-										<li><a href="#">Melodrama</a></li>
-										<li><a href="#">Action movie</a></li>
-										<li><a href="#">Family movie</a></li>
-										<li><a href="#">Cartoon</a></li>
-										<li><a href="#">Story</a></li>
-										<li><a href="#">Detective</a></li>
-										<li><a href="#">Thriller</a></li>
-										<li><a href="#">Drama</a></li>
-										<li><a href="#">Comedy</a></li>
-										<li><a href="#">Fantasy</a></li>										
-									</ul>
-							</div>					
-				</div>
 
 
+<!-- "All films" -->
+<div class="container">										
+		<h1>All films</h1>				
+</div><br>
 
-
-
-
+<div class="container-fluid">
+	<div class="row height">
 
 <!-- Block wich film 1  -->
-				<div class="col-xs-6 col-sm-4 col-md-3 film_1 height">
+				<div class="col-xs-6 col-sm-4 col-md-3 film_1">
 					<table>
 						<tr>								
 							<td class="size_picture">
@@ -171,13 +127,8 @@
 
 
 
-
-
-
-
-
 <!-- Block wich film 2  -->				
-				<div class="col-xs-6 col-sm-4 col-md-3 film_2 height">
+				<div class="col-xs-6 col-sm-4 col-md-3 film_2">
 						<table>
 								<tr>								
 									<td class="size_picture">
@@ -209,7 +160,7 @@
 
 
 <!-- Block wich film 3  -->				
-				<div class="col-xs-6 col-sm-4 col-md-3 film_3 height">
+				<div class="col-xs-6 col-sm-4 col-md-3 film_3">
 						<table>
 								<tr>								
 									<td class="size_picture">
@@ -239,8 +190,9 @@
 				</div>
 
 
+
 <!-- Block wich film 4  -->				
-				<div class="col-xs-6 col-sm-4 col-md-3 film_4 height">
+				<div class="col-xs-6 col-sm-4 col-md-3 film_4">
 						<table>
 								<tr>								
 									<td class="size_picture">
@@ -266,98 +218,150 @@
 														<tr>
 															<td>Price:6 Br</td>
 														</tr>					
-							</table>
+						</table>
+				</div>
+
+
+<!-- Block wich film 5  -->				
+				<div class="col-xs-6 col-sm-4 col-md-3 film_5">
+						<table>
+								<tr>								
+									<td class="size_picture">
+										<img src="https://www.vokrug.tv/pic/product/b/9/d/6/b9d656f7d1800d438b60d4ef968a6467.jpg">
+									</td>
+									
+								</tr>
+									<tr>
+										<td><p class="text-muted">Comedy</p></td>
+									</tr>
+										<tr>
+												<td><h4>Mistress</h4></td>
+										</tr>
+											<tr class="start">
+												<td>Sasha Bortech, Paulina Andreeva and Yulia Aleksandrova against men</td>
+											</tr>
+												<tr>
+													<td>Start date:15.03</td>
+												</tr>	
+													<tr>
+														<td>End Date:12.04</td>
+													</tr>
+														<tr>
+															<td>Price:4.5 Br</td>
+														</tr>					
+						</table>
+				</div>
+
+
+<!-- Block wich film 6  -->				
+				<div class="col-xs-6 col-sm-4 col-md-3 film_6">
+						<table>
+								<tr>								
+									<td class="size_picture">
+										<img src="https://www.film.ru/sites/default/files/movies/posters/3075147-1063500.jpg">
+									</td>
+									
+								</tr>
+									<tr>
+										<td><p class="text-muted">Cartoon</p></td>
+									</tr>
+										<tr>
+												<td><h4>How to train your dragon 3</h4></td>
+										</tr>
+											<tr class="start">
+												<td>Epic trilogy about Vikings and dragons</td>
+											</tr>
+												<tr>
+													<td>Start date:29.03</td>
+												</tr>	
+													<tr>
+														<td>End Date:27.04</td>
+													</tr>
+														<tr>
+															<td>Price:4 Br</td>
+														</tr>					
+						</table>
+				</div>
+
+
+
+<!-- Block wich film 7  -->				
+				<div class="col-xs-6 col-sm-4 col-md-3 film_7">
+						<table>
+								<tr>								
+									<td class="size_picture">
+										<img src="https://cdn.fishki.net/upload/post/2018/11/30/2785391/2e373a0cd95aeecd47b4159a768aa7c1.png">
+									</td>
+									
+								</tr>
+									<tr>
+										<td><p class="text-muted">Fantasy Action Adventure</p></td>
+									</tr>
+										<tr>
+												<td><h4>Captain Marvel</h4></td>
+										</tr>
+											<tr class="start">
+												<td>Military pilot becomes a superhero</td>
+											</tr>
+												<tr>
+													<td>Start date:26.04</td>
+												</tr>	
+													<tr>
+														<td>End Date:18.05</td>
+													</tr>
+														<tr>
+															<td>Price:7 Br</td>
+														</tr>					
+						</table>
+				</div>
+
+
+
+
+<!-- Block wich film 8  -->				
+				<div class="col-xs-6 col-sm-4 col-md-3 film_8">
+						<table>
+								<tr>								
+									<td class="size_picture">
+										<img src="http://horrorzone.ru/uploads/_pages2/72190/gosti.jpg">
+									</td>
+									
+								</tr>
+									<tr>
+										<td><p class="text-muted">Horror Thriller</p></td>
+									</tr>
+										<tr>
+												<td><h4>Visitor</h4></td>
+										</tr>
+											<tr class="start">
+												<td>Company of friends waiting for monsters in an abandoned house</td>
+											</tr>
+												<tr>
+													<td>Start date:10.04</td>
+												</tr>	
+													<tr>
+														<td>End Date:15.05</td>
+													</tr>
+														<tr>
+															<td>Price:4.5 Br</td>
+														</tr>					
+						</table>
 				</div>
 				
+	</div>
+</div>		
+	
+
+	
+<hr noshade width="100%" color="red" align="center" size="1" > 
+	<br>
+	<br>
+		<div class="container">
+			<h4>All rights reserved</h4> 
 		</div>
-		</div>		
-	
-
-	
-	<hr>
-	<!-- <div class="container">
-			<p class="text-muted">All rights reserved</p><br>
-
-			<div id="footer_social">
-					<a href="https://www.google.com/" title="Google+"><img class="img_soc" src="img/g.png" alt="Google+" /></a>
-					<a href="https://web.facebook.com/?_rdc=1&_rdr" title="Группа FaceBook"><img class="img_soc" src="img/f.png" alt="Группа FaceBook" /></a>
-					<a href="https://vk.com/" title="Группа Вконтакте"><img class="img_soc" src="img/v.png" alt="Группа Вконтакте" /></a>
-				</div>
-  </div> -->
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-  <div class="collapse navbar-collapse" id="#head_menu">				
-		<form class="navbar-form navbar-right" role="search">
-				<div class="form-group">
-				  <input type="text" class="form-control" placeholder="Search">
-				</div>
-
-
-
-				<!-- <button type="submit" class="btn btn-danger">Registration</button> -->
-
-				<!-- <button class="btn btn-info" data-toggle="modal" data-target="#myModal">Вспывающее окно</button>
-				<div id="myModal" class="modal fade" tabindex="-1">
-					  <div class="modal-dialog modal-sm">
-						<div class="modal-content">
-							 <div class="modal-header">
-								<button class="close" data-dismiss="modal">х</button>
-								<h4 class="modal-title">Registration</h4>
-							</div>
-						</div>
-					</div>
-				</div> -->
-
-
-				<button class="btn btn-danger" data-toggle="modal" data-target="#reg">Registration</button>
-				<div id="reg" class="modal fade" tabindex="-1">
-				  <div class="modal-dialog modal-sm">
-					<div class="modal-content">
-					  <div class="modal-header">
-						<button class="close" data-dismiss="modal">х</button>
-						<h4 class="modal-title">Registration</h4>
-					  </div>
-			<form>
-				<div class="container">
-					<div class="form-group">
-						<label for="firstname">First Name</label><br>
-						<input type="text" class="form-control" id="firstname" placeholder="Enter your first name"><br><br>
-
-						<lable for="lastname">Last Name</lable><br>
-						<input type="text" class="form-control" id="lastname" placeholder="Enter you Last Name"><br><br>
-
-						<lable for="email">Email</lable><br>
-						<input type="email" class="form-control" id="email" placeholder="Enter your Email">
-					</div>
-
-				</div>
-				<br>
-			</form>
-					 
-					  <div class="modal-footer">
-						<button class="btn btn-success" data-dismiss="modal">Sing in</button>
-					  </div>
-					</div>
-				  </div>
-				</div>  
-
-
-
-
-		</form>
-</div>
+	<br>
+	<br>
+	    
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>    
