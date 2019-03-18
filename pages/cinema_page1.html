@@ -5,58 +5,28 @@
 <!-- https://afisha.yandex.by/vitebsk/selections/all-events-cinema?version=desktop -->
 
 	<meta charset="utf-8">
-	<title>Cinema</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">	 
-	<link rel="stylesheet" href="style.css" type="text/css"/>
-	<link href="css/bootstrap.css" rel=stylesheet>
-	<link rel="stylesheet" href="my_css/my_css_main_page.css" type="text/css" charset="utf-8">	
-	<!-- <link rel="stylesheet" href="css/adsite.css" type="text/css" charset="utf-8"> -->
-<style>
-.container-fluid>.height{
-    max-height:1000px;
-    min-height:560px; 
-}
+	<title>cinema_page1</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">	
 
+	<!-- <boostrap link --> 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>    
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+		integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" 
+		integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+		integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<!-- > -->
 
-.size_picture>img{
-    border:2px solid #4d4949;
-    border-radius:5px;
-	width:100%;
-	height:350px;	
-}
-
-
-.block_left{
-    background:white;
-}
-.block_right{
-	background:white;
-}
-.film_1{
-    background:white;
-}
-.film_2{
-    background:white;
-}
-.film_3{
-    background:white;
-}
-.film_4{
-    background:white;
-}
-.film_5{
-    background:white;
-}
-.film_6{
-    background:white;
-}
-.film_7{
-    background:white;
-}
-.film_8{
-    background:white;
-}
-</style>
+	<!-- < my files -->
+		<link rel="stylesheet" href="../css/main.css" type="text/css" charset="utf-8">
+	<!-- > -->
+	
 </head>
 <body>  
 	<!-- Header -->
@@ -78,12 +48,11 @@
 									  <input type="text" class="form-control" placeholder="Search">
 									</div>					
 
-									<a href="registration.html" class="btn btn-success" role="button">Registration</a>								
-									 
+									<a href="registration.html" class="btn btn-success" role="button">Registration</a>								 
 							</form>
 				</div>
 			</div>
-		</nav>
+	</nav>
 
 
 <!-- "All films" -->
@@ -116,7 +85,7 @@
 											<td>Start date:01.03</td>
 										</tr>	
 											<tr>
-												<td>End Date:22.03</td>
+												<td>End date:22.03</td>
 											</tr>
 												<tr>
 													<td>Price:6 Br</td>
@@ -135,7 +104,7 @@
 										<img src="data:image/jpeg;base64,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">
 									</td>
 									
-								</tr>
+										</tr>
 									<tr>
 										<td><p class="text-muted">Thriller</p></td>
 									</tr>
@@ -149,7 +118,7 @@
 													<td>Start date:10.03</td>
 												</tr>	
 													<tr>
-														<td>End Date:27.03</td>
+														<td>End date:27.03</td>
 													</tr>
 														<tr>
 															<td>Price:4.5 Br</td>
@@ -165,8 +134,7 @@
 								<tr>								
 									<td class="size_picture">
 										<img src="https://img.afisha.tut.by/static/media/340x0s/cover/03/7/30-bezumnykh-zhelaniy-519136.jpg">
-									</td>
-									
+									</td>									
 								</tr>
 									<tr>
 										<td><p class="text-muted">Drama</p></td>
@@ -181,7 +149,7 @@
 													<td>Start date:10.03</td>
 												</tr>	
 													<tr>
-														<td>End Date:20.03</td>
+														<td>End date:20.03</td>
 													</tr>
 														<tr>
 															<td>Price:5 Br</td>
@@ -213,7 +181,7 @@
 													<td>Start date:27.03</td>
 												</tr>	
 													<tr>
-														<td>End Date:15.04</td>
+														<td>End date:15.04</td>
 													</tr>
 														<tr>
 															<td>Price:6 Br</td>
@@ -244,7 +212,7 @@
 													<td>Start date:15.03</td>
 												</tr>	
 													<tr>
-														<td>End Date:12.04</td>
+														<td>End date:12.04</td>
 													</tr>
 														<tr>
 															<td>Price:4.5 Br</td>
@@ -275,7 +243,7 @@
 													<td>Start date:29.03</td>
 												</tr>	
 													<tr>
-														<td>End Date:27.04</td>
+														<td>End date:27.04</td>
 													</tr>
 														<tr>
 															<td>Price:4 Br</td>
@@ -307,7 +275,7 @@
 													<td>Start date:26.04</td>
 												</tr>	
 													<tr>
-														<td>End Date:18.05</td>
+														<td>End date:18.05</td>
 													</tr>
 														<tr>
 															<td>Price:7 Br</td>
@@ -340,20 +308,20 @@
 													<td>Start date:10.04</td>
 												</tr>	
 													<tr>
-														<td>End Date:15.05</td>
+														<td>End date:15.05</td>
 													</tr>
 														<tr>
 															<td>Price:4.5 Br</td>
 														</tr>					
 						</table>
-				</div>
+				
 				
 	</div>
 </div>		
 	
 
 	
-<hr noshade width="100%" color="red" align="center" size="1" > 
+
 	<br>
 	<br>
 		<div class="container">
@@ -364,7 +332,6 @@
 	    
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>    
-<script src="js/bootstrap.js"></script>  
+
 </body>
 </html>
