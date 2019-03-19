@@ -25,7 +25,13 @@
 
 	<!-- < my files -->
 		<link rel="stylesheet" href="../css/main.css" type="text/css" charset="utf-8">
+		  
+		  <script src="../js/add_film.js"></script>
+		  <script src="../js/treatment_form.js"></script>
+		  <script src="../js/Singin.js"></script>
+		  
 	<!-- > -->
+
 	
 </head>
 <body>  
@@ -43,13 +49,87 @@
 				</div>
 	
 				<div class="collapse navbar-collapse" id="#head_menu">				
-							<form class="navbar-form navbar-right" role="search">
+							<!-- <form class="navbar-form navbar-right" role="search">
 									<div class="form-group">
 									  <input type="text" class="form-control" placeholder="Search">
 									</div>					
 
 									<a href="registration.html" class="btn btn-success" role="button">Registration</a>								 
-							</form>
+									
+								
+										  <ul class="nav navbar-nav navbar-right">
+												<li><a href="#">Ссылка</a></li>
+												<li class="dropdown">
+												  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+												  <ul class="dropdown-menu">
+													<li><a href="#">Действие</a></li>
+													<li><a href="#">Другое действие</a></li>
+													<li><a href="#">Что-то еще</a></li>
+													<li class="divider"></li>
+													<li><a href="#">Отдельная ссылка</a></li>
+												  </ul>
+												</li>
+											  </ul> -->
+
+
+												<div id="navUser" style="display:none">
+														<ul class="nav navbar-nav navbar-right">													
+																<li class="dropdown">
+																<a href="#" class="dropdown-toggle" data-toggle="dropdown">User<b class="caret"></b></a>
+																<ul class="dropdown-menu">		
+																	<li><div id="nameUser"></div></li>	
+																	<li class="divider"></li>														
+																	<li><a href="userTable.html">My films</a></li>																	
+																	<li class="divider"></li>
+																	<li>
+																		<div class="col-md-12" >
+																			<button class="btn btn-default" style="width: 100%" id="exit">Exit</button>
+																		</div>
+																	</li>	
+																</ul>
+																</li>
+															</ul>
+												</div>											
+
+
+<!-- ///////////////////////////// -->
+											
+												   <ul class="nav navbar-nav navbar-right" id="navReg">
+													<li><a href="registration.html">Registration</a></li>
+													<li class="dropdown">
+													  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Login<b class="caret"></b></a>													  
+													  <ul class="dropdown-menu" style="width: 250px">
+															<form id="form2">
+														<li>
+															<div class="col-md-12">
+																<input type="text" class="form-control" placeholder="First Name" id="FN" required>
+															</div>
+														</li>
+														<li>
+															<div class="col-md-12">
+																<input type="text" class="form-control" placeholder="Last Name" id="LN">
+															</div>
+														</li>														
+														<li>
+															<div class="col-md-12">
+																<button  type="submit" onclick="SingId(document.getElementById('form2'))" class="btn btn-success">Sing in</button>
+															</div>	
+															
+														</li>
+													</form>	
+													  </ul>
+													
+													</li>
+												  </ul> 
+												
+												  <form class="navbar-form navbar-right" role="search">
+														<div class="form-group">
+														  <input type="text" class="form-control" placeholder="Search">
+														</div>
+														<button type="submit" class="btn btn-default">Search</button>
+													  </form> 
+			<!-- ///////////////////////////// -->									  
+							<!-- </form> -->
 				</div>
 			</div>
 	</nav>
@@ -78,19 +158,24 @@
 								<tr>
 										<td><h4>Alita</h4></td>
 								</tr>
-									<tr class="start">
-										<td>Robert Rodriguez, James Cameron and the Cyborg Girl</td>
+									<tr>
+											<td><button class="btn btn-success">I want to watch</button></td>
 									</tr>
 										<tr>
-											<td>Start date:01.03</td>
-										</tr>	
+											<td>Robert Rodriguez, James Cameron and the Cyborg Girl</td>
+										</tr>
 											<tr>
-												<td>End date:22.03</td>
-											</tr>
+												<td>Start date:01.03</td>
+											</tr>	
 												<tr>
-													<td>Price:6 Br</td>
-												</tr>					
+													<td>End date:22.03</td>
+												</tr>
+													<tr>
+														<td>Price:6 Br</td>
+													</tr>	
+																
 					</table>
+					
 				</div>
 
 
@@ -111,19 +196,24 @@
 										<tr>
 												<td><h4>The mule</h4></td>
 										</tr>
-											<tr class="start">
-												<td>Clint Eastwood film with him in the lead role</td>
+											<tr>
+													<td><button class="btn btn-success">I want to watch</button></td>
 											</tr>
 												<tr>
-													<td>Start date:10.03</td>
-												</tr>	
+													<td>Clint Eastwood film with him in the lead role</td>
+												</tr>
 													<tr>
-														<td>End date:27.03</td>
-													</tr>
+														<td>Start date:10.03</td>
+													</tr>	
 														<tr>
-															<td>Price:4.5 Br</td>
-														</tr>					
+															<td>End date:27.03</td>
+														</tr>
+															<tr>
+																<td>Price:4.5 Br</td>
+															</tr>
+																			
 							</table>
+						
 				</div>
 
 
@@ -143,18 +233,23 @@
 												<td><h4>30 crazy desires</h4></td>
 										</tr>
 											<tr>
-												<td>The loser guy meets the holiday girl</td>
+													<td><button class="btn btn-success">I want to watch</button></td>
 											</tr>
 												<tr>
-													<td>Start date:10.03</td>
-												</tr>	
+													<td>The loser guy meets the holiday girl</td>
+												</tr>
 													<tr>
-														<td>End date:20.03</td>
-													</tr>
+														<td>Start date:10.03</td>
+													</tr>	
 														<tr>
-															<td>Price:5 Br</td>
-														</tr>					
+															<td>End date:20.03</td>
+														</tr>
+															<tr>
+																<td>Price:5 Br</td>
+															</tr>	
+																			
 							</table>
+						
 				</div>
 
 
@@ -174,19 +269,24 @@
 										<tr>
 												<td><h4>Happy new day of death</h4></td>
 										</tr>
-											<tr class="start">
-												<td>Sequel of the naughty youth slasher</td>
+											<tr>
+													<td><button class="btn btn-success">I want to watch</button></td>
 											</tr>
 												<tr>
-													<td>Start date:27.03</td>
-												</tr>	
+													<td>Sequel of the naughty youth slasher</td>
+												</tr>
 													<tr>
-														<td>End date:15.04</td>
-													</tr>
+														<td>Start date:27.03</td>
+													</tr>	
 														<tr>
-															<td>Price:6 Br</td>
-														</tr>					
+															<td>End date:15.04</td>
+														</tr>
+															<tr>
+																<td>Price:6 Br</td>
+															</tr>	
+																			
 						</table>
+						
 				</div>
 
 
@@ -205,19 +305,24 @@
 										<tr>
 												<td><h4>Mistress</h4></td>
 										</tr>
-											<tr class="start">
-												<td>Sasha Bortech, Paulina Andreeva and Yulia Aleksandrova against men</td>
+											<tr>
+												<td><button class="btn btn-success">I want to watch</button></td>
 											</tr>
 												<tr>
-													<td>Start date:15.03</td>
-												</tr>	
+													<td>Sasha Bortech, Paulina Andreeva and Yulia Aleksandrova against men</td>
+												</tr>
 													<tr>
-														<td>End date:12.04</td>
-													</tr>
+														<td>Start date:15.03</td>
+													</tr>	
 														<tr>
-															<td>Price:4.5 Br</td>
-														</tr>					
+															<td>End date:12.04</td>
+														</tr>
+															<tr>
+																<td>Price:4.5 Br</td>
+															</tr>	
+																	
 						</table>
+						
 				</div>
 
 
@@ -236,19 +341,24 @@
 										<tr>
 												<td><h4>How to train your dragon 3</h4></td>
 										</tr>
-											<tr class="start">
-												<td>Epic trilogy about Vikings and dragons</td>
+											<tr>
+													<td><button class="btn btn-success">I want to watch</button></td>
 											</tr>
 												<tr>
-													<td>Start date:29.03</td>
-												</tr>	
+													<td>Epic trilogy about Vikings and dragons</td>
+												</tr>
 													<tr>
-														<td>End date:27.04</td>
-													</tr>
+														<td>Start date:29.03</td>
+													</tr>	
 														<tr>
-															<td>Price:4 Br</td>
-														</tr>					
+															<td>End date:27.04</td>
+														</tr>
+															<tr>
+																<td>Price:4 Br</td>
+															</tr>	
+																			
 						</table>
+					
 				</div>
 
 
@@ -268,19 +378,24 @@
 										<tr>
 												<td><h4>Captain Marvel</h4></td>
 										</tr>
-											<tr class="start">
-												<td>Military pilot becomes a superhero</td>
+											<tr>
+													<td><button class="btn btn-success">I want to watch</button></td>
 											</tr>
 												<tr>
-													<td>Start date:26.04</td>
-												</tr>	
+													<td>Military pilot becomes a superhero</td>
+												</tr>
 													<tr>
-														<td>End date:18.05</td>
-													</tr>
+														<td>Start date:26.04</td>
+													</tr>	
 														<tr>
-															<td>Price:7 Br</td>
-														</tr>					
+															<td>End date:18.05</td>
+														</tr>
+															<tr>
+																<td>Price:7 Br</td>
+															</tr>	
+																	
 						</table>
+						
 				</div>
 
 
@@ -301,22 +416,83 @@
 										<tr>
 												<td><h4>Visitor</h4></td>
 										</tr>
-											<tr class="start">
-												<td>Company of friends waiting for monsters in an abandoned house</td>
+											<tr>
+													<td><button class="btn btn-success">I want to watch</button></td>
 											</tr>
 												<tr>
-													<td>Start date:10.04</td>
-												</tr>	
+													<td>Company of friends waiting for monsters in an abandoned house</td>
+												</tr>
 													<tr>
-														<td>End date:15.05</td>
-													</tr>
+														<td>Start date:10.04</td>
+													</tr>	
 														<tr>
-															<td>Price:4.5 Br</td>
-														</tr>					
+															<td>End date:15.05</td>
+														</tr>
+															<tr>
+																<td>Price:4.5 Br</td>
+															</tr>	
+																	
 						</table>
-				
+					
 				
 	</div>
+	<script>
+			getFilms().map((film, index) => {
+			document.write('<div class="col-xs-6 col-sm-4 col-md-3 film_8">')
+			document.write('<table>')
+			document.write('<tr>')			
+			document.write('<td class="size_picture">')
+			document.write('<img src='+film.Img+'>')
+			document.write('</td>')
+			document.write('</tr>')
+			document.write('<tr><td><p class="text-muted">' + film.Genre + '</p></td></tr>')
+			document.write('<tr><td><h4>' + film.Name_film + '</h4></td></tr>')
+
+			document.write('<tr><td><button class="btn btn-success" onclick="takeFilm()">I want to watch</button></td></tr>')
+					  
+			document.write('<tr><td><h4>' + film.Description + '</h4></td></tr>')
+			document.write('<tr class="start"><td>' + film.Start + '</td></tr>')
+			document.write('<tr class="start"><td>' + film.End + '</td></tr>')
+			document.write('<tr class="start"><td>' + film.Prise + '</td></tr>')
+			document.write('</table></div>')
+		})
+
+		// 	document.write('<td>' + (index + 1) + '</td>')
+		// 	document.write('<td>' + film.Img + '</td>')
+		// 	document.write('<td>' + film.Genre + '</td>')
+		// 	document.write('<td>' + film.Name_film + '</td>')
+		// 	document.write('<td>' + film.Description + '</td>')
+		// 	document.write('<td>' + film.Start + '<br>'+film.End+ '</td>')
+		// 	// document.write('<td>' +  + '</td>')
+		// 	document.write('<td>' + film.Prise + '</td>')
+		// 	document.write(
+		// 	'<td><button class="btn btn-danger" onClick="deleteFilm(' +
+		// 		index +
+		// 		')" type="submit" value="Remove">Remove</button><br /></td>'
+		// 	)                    
+		// 	document.write('</tr>')
+		// })
+
+
+
+		// getFilms().map((film, index) => {
+		// 	document.write('<tr>')
+		// 	document.write('<td>' + (index + 1) + '</td>')
+		// 	document.write('<td>' + film.Img + '</td>')
+		// 	document.write('<td>' + film.Genre + '</td>')
+		// 	document.write('<td>' + film.Name_film + '</td>')
+		// 	document.write('<td>' + film.Description + '</td>')
+		// 	document.write('<td>' + film.Start + '<br>'+film.End+ '</td>')
+		// 	// document.write('<td>' +  + '</td>')
+		// 	document.write('<td>' + film.Prise + '</td>')
+		// 	document.write(
+		// 	'<td><button class="btn btn-danger" onClick="deleteFilm(' +
+		// 		index +
+		// 		')" type="submit" value="Remove">Remove</button><br /></td>'
+		// 	)                    
+		// 	document.write('</tr>')
+		// })
+	  </script>
 </div>		
 	
 
@@ -331,7 +507,7 @@
 	<br>
 	    
 
-
+	<!-- <script src="../js/Singin.js"></script> -->
 
 </body>
 </html>

@@ -30,7 +30,7 @@ function valid(form) {
     temp.Lost_name = l
     temp.email = e
     var id = users.push(temp)
-    console.log(user)
+    console.log(users);
     localStorage.setItem('users', JSON.stringify(users))
   }
 }

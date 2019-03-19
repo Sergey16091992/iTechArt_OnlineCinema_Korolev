@@ -71,7 +71,7 @@
                       index +
                       ')" type="reset" value="Remove_request.">Remove request</button></td>'
                   )
-
+                  
                   document.write('</tr>')
                 })
               </script>
@@ -162,10 +162,52 @@
                   </button>
                 </td>
               </tr>
+              
             </tbody>
+          </table>
+
+          <table class="table table-bordered table-hover">
+              <thead>
+                  <tr class="active">
+                    <th>Id</th>
+                    <th>Image of film</th>
+                    <th>Genre</th>
+                    <th>Name of film</th>
+                    <th>Description</th>
+                    <th>Show period</th>
+                    <th>Prise</th>
+                    <th>Act</th>
+                  </tr>
+                </thead>
+            <script>
+              getFilms().map((film, index) => {
+                document.write('<tr>')
+                document.write('<td>' + (index + 1) + '</td>')
+                document.write('<td>' + film.Img + '</td>')
+                document.write('<td>' + film.Genre + '</td>')
+                document.write('<td>' + film.Name_film + '</td>')
+                document.write('<td>' + film.Description + '</td>')
+                document.write('<td>' + film.Start + '<br>'+film.End+ '</td>')
+                // document.write('<td>' +  + '</td>')
+                document.write('<td ">' + film.Prise + '</td>')
+                document.write(
+                  '<td><button class="btn btn-danger" onClick="deleteFilm(' +
+                      index +
+                      ')" type="submit" value="Remove">Remove</button><br /></td>'
+                )                    
+                document.write('</tr>')
+              })
+            </script>
           </table>
         </div>
       </div>
     </div>
   </body>
 </html>
+<!-- film.Img = img
+film.Genre = genre
+film.Name_film = name_film
+film.Description = description
+film.Start = start
+film.End = end
+film.Prise = prise -->

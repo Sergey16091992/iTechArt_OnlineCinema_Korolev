@@ -34,9 +34,26 @@ $(document).ready(function() {
     film.End = end
     film.Prise = prise
 
-    var i = films.length
-    films[i] = film
-    console.log(films)
+    // var i = films.length
+    // films[i] = film
+    // console.log(films)
+    // localStorage.setItem('FILMS', JSON.stringify(films))
+    var idFilm = films.push(film)
+    // console.log(users);
     localStorage.setItem('FILMS', JSON.stringify(films))
+
+    
   })
+
+  
 })
+function getFilms() {
+  var films = JSON.parse(localStorage.getItem('FILMS'))
+  return films
+}
+
+function deleteFilm(filmId) {
+  var films = JSON.parse(localStorage.getItem('FILMS'))
+  films.splice(filmId, 1)
+  localStorage.setItem('FILMS', JSON.stringify(films))
+}
